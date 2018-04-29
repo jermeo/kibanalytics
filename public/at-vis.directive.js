@@ -1,8 +1,8 @@
-import { uiModules } from 'ui/modules';
+import { uiModules } from 'ui/modules'
 
-import { createAtVisController } from './at-vis.controller.js';
-import './atinternet-kibana.css';
-import template from './at-vis.template.html';
+import { createAtVisController } from './at-vis.controller.js'
+import './atinternet-kibana.css'
+import template from './at-vis.template.html'
 
 uiModules.get('kibana')
   .directive('atVis', () => ({
@@ -14,7 +14,7 @@ uiModules.get('kibana')
     },
     template,
     bindToController: true,
-    link($scope, ...args) {
-      $scope.at.link($scope, ...args);
+    link ($scope, ...args) {
+      $scope.at.link($scope, ...args)
     }
-  }));
+  }))

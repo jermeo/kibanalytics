@@ -6,4 +6,4 @@ export default kibana => new kibana.Plugin({
       'plugins/kibanalytics/atinternet-kibana'
     ]
   }
-});
+})

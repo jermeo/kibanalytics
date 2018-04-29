@@ -1,15 +1,15 @@
-import { TemplateVisTypeProvider } from 'ui/template_vis_type/template_vis_type';
-import { VisTypesRegistryProvider } from 'ui/registry/vis_types';
-import { VisVisTypeProvider } from 'ui/vis/vis_type';
+import { TemplateVisTypeProvider } from 'ui/template_vis_type/template_vis_type'
+import { VisTypesRegistryProvider } from 'ui/registry/vis_types'
+import { VisVisTypeProvider } from 'ui/vis/vis_type'
 
-import './atinternet-kibana.css';
-import './at-vis.directive';
-import './at-vis-editor.directive';
+import './atinternet-kibana.css'
+import './at-vis.directive'
+import './at-vis-editor.directive'
 
 // register the provider with the visTypes registry
-VisTypesRegistryProvider.register(function MetricVisProvider(Private) {
-  const VisType = Private(VisVisTypeProvider);
-  const TemplateVisType = Private(TemplateVisTypeProvider);
+VisTypesRegistryProvider.register(function MetricVisProvider (Private) {
+  const VisType = Private(VisVisTypeProvider)
+  const TemplateVisType = Private(TemplateVisTypeProvider)
   // const VisSchemas = Private(VisSchemasProvider);
 
   // return the visType object, which kibana will use to display and configure new
@@ -31,5 +31,5 @@ VisTypesRegistryProvider.register(function MetricVisProvider(Private) {
     requiresTimePicker: false,
     fullEditor: false,
     category: VisType.CATEGORY.OTHER
-    });
-  });
+  })
+})

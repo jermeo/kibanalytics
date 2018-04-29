@@ -1,22 +1,16 @@
 // vis editor
-
-export function createAtEditorController(getAppState) {
-
+export function createAtEditorController (getAppState) {
   class AtEditorController {
-    link($scope, $el /*, $attr*/) {
-
+    link ($scope, $el) {
       $scope.$watchMulti(
         ['=atEditor.vis.params'],
         () => {
-          const appState = getAppState();
-          appState.vis.params = $scope.atEditor.vis.params;
+          const appState = getAppState()
+          appState.vis.params = $scope.atEditor.vis.params
           appState.save(true)
         }
-      );
-
+      )
     }
-
   }
-
-  return new AtEditorController();
+  return new AtEditorController()
 }
