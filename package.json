@@ -1,0 +1,17 @@
+{
+  "name": "kibanalytics",
+  "version": "0.0.1",
+  "description": "Mesure and monitor your dashboards usage with AT Internet",
+  "main": "index.js",
+  "kibana": {
+    "version": "5.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
