@@ -1,7 +1,7 @@
 // viz controller
 import logoUrl from 'plugins/kibanalytics/assets/at-internet.png'
 
-export function createAtVisController (Private, timefilter, es, serviceSettings, $sce) {
+export function createAtVisController () {
   class AtVisController {
     link ($scope) {
       let ATTag
